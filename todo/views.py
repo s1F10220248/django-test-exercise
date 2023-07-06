@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.shortcuts import render
 from django.http import Http404
 from django.utils.timezone import make_aware
 from django.utils.dateparse import parse_datetime
@@ -33,4 +32,3 @@ def detail(request, task_id):
             'task': task,
     }
     return render(request, 'todo/detail.html', context)
-    
